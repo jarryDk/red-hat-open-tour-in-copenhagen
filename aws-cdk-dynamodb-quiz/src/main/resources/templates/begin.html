@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+<style>
+body{
+    background-color: #d33c3f;
+}
+
+label{
+    color: white;
+    width: 240px;
+    display:block;
+    font-weight: bold;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#signup {
+  height: 100px;
+  position: relative;
+  float: right;
+}
+#content{
+    margin: 10px;
+    color: white;
+}
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Begin</title>
+</head>
+
+<body>
+
+    <img src="https://www.redpill-linpro.com/themes/custom/cerpus_base/logo.svg" id="signup">
+
+<div id="content">
+
+    <form action="/thanks" method="POST">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="questionNoOne">Cloud Provider</label>
+        <input type="text" id="questionNoOne" name="questionNoOne"><br><br>
+
+        <label for="questionNoTwo">Framework</label>
+        <input type="text" id="questionNoTwo" name="questionNoTwo"><br><br>
+
+        <label for="questionNoTree">Template engine</label>
+        <input type="text" id="questionNoTree" name="questionNoTree"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</div>
+
+</body>
+
+</html>

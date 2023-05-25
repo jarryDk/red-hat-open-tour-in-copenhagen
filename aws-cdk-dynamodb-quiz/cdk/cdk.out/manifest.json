@@ -1,0 +1,187 @@
+{
+  "version": "31.0.0",
+  "artifacts": {
+    "aws-cdk-dynamodb-quiz.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "aws-cdk-dynamodb-quiz.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "aws-cdk-dynamodb-quiz": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "aws-cdk-dynamodb-quiz.template.json",
+        "tags": {
+          "application": "aws-cdk-dynamodb-quiz",
+          "environment": "demo",
+          "project": "MicroProfile with Quarkus on AWS Lambda using DynamoDB"
+        },
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/535dfa6d251c6577ca1eac76a497ba73cbdc967f736979dd10489e08b11f69ce.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "aws-cdk-dynamodb-quiz.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        },
+        "stackName": "aws-cdk-dynamodb-quiz-stack"
+      },
+      "dependencies": [
+        "aws-cdk-dynamodb-quiz.assets"
+      ],
+      "metadata": {
+        "/aws-cdk-dynamodb-quiz": [
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "application",
+                "Value": "aws-cdk-dynamodb-quiz"
+              },
+              {
+                "Key": "environment",
+                "Value": "demo"
+              },
+              {
+                "Key": "project",
+                "Value": "MicroProfile with Quarkus on AWS Lambda using DynamoDB"
+              }
+            ]
+          }
+        ],
+        "/aws-cdk-dynamodb-quiz/quizs-in-stack": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "quizsinstackE64DF6D8"
+            }
+          }
+        ],
+        "/aws-cdk-dynamodb-quiz/quizs-in-stack/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "quizsinstackE64DF6D8"
+          }
+        ],
+        "/aws-cdk-dynamodb-quiz/Quiz-Lambda-Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuizLambdaRole318CDE41"
+          }
+        ],
+        "/aws-cdk-dynamodb-quiz/Quiz-Lambda-Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuizLambdaRoleDefaultPolicy5DE988C3"
+          }
+        ],
+        "/aws-cdk-dynamodb-quiz/dk_jarry_lambda_quiz_boundary_quizs/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "dkjarrylambdaquizboundaryquizsCDF36E33"
+          }
+        ],
+        "/aws-cdk-dynamodb-quiz/FunctionArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FunctionArn"
+          }
+        ],
+        "/aws-cdk-dynamodb-quiz/HttpApiGatewayIntegration/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HttpApiGatewayIntegrationD111AA28"
+          }
+        ],
+        "/aws-cdk-dynamodb-quiz/HttpApiGatewayIntegration/DefaultRoute/HttpApiGatewayIntegration/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HttpApiGatewayIntegrationDefaultRouteHttpApiGatewayIntegration717E7BE4"
+          }
+        ],
+        "/aws-cdk-dynamodb-quiz/HttpApiGatewayIntegration/DefaultRoute/HttpApiGatewayIntegration-Permission": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HttpApiGatewayIntegrationDefaultRouteHttpApiGatewayIntegrationPermission857CA78E"
+          }
+        ],
+        "/aws-cdk-dynamodb-quiz/HttpApiGatewayIntegration/DefaultRoute/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HttpApiGatewayIntegrationDefaultRoute6F417493"
+          }
+        ],
+        "/aws-cdk-dynamodb-quiz/HttpApiGatewayIntegration/DefaultStage/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HttpApiGatewayIntegrationDefaultStageD61D24F4"
+          }
+        ],
+        "/aws-cdk-dynamodb-quiz/HttpApiGatewayUrlOutput": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HttpApiGatewayUrlOutput"
+          }
+        ],
+        "/aws-cdk-dynamodb-quiz/HttpApiGatewayCurlOutput": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HttpApiGatewayCurlOutput"
+          }
+        ],
+        "/aws-cdk-dynamodb-quiz/HttpApiGatewayTestOutput": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HttpApiGatewayTestOutput"
+          }
+        ],
+        "/aws-cdk-dynamodb-quiz/HttpApiGatewaySTOutput": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HttpApiGatewaySTOutput"
+          }
+        ],
+        "/aws-cdk-dynamodb-quiz/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/aws-cdk-dynamodb-quiz/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/aws-cdk-dynamodb-quiz/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/aws-cdk-dynamodb-quiz/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "aws-cdk-dynamodb-quiz"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
