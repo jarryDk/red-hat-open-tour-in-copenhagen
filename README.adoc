@@ -1,29 +1,28 @@
 = Red Hat Open tour in Copenhagen
 
-REDPILL LOGO
 
-== QR Codes
+image::images/redpill-linpro-logo-700x400.png[Logo, float="right", width=400]
 
-=== Sign up for the newsletter
+== Sign up for the newsletter
 image::images/redpill-linpro-signup.png[Signup]
 
 Have the value of Two coins
 
-=== Try the quiz
+== IT Talks - podcast
+image::images/redpill-linpro-teck-talks.png[][IT Talks - podcast]
+
+Have the value of One coin
+
+== Try the quiz
 image::images/redpill-linpro-quiz.png[Quiz]
 
-
-Have the value of One coins + plus the possibility to win a prize
-
-== Have a look at Teck Talks
-
-QR CODE
+Have the value of One coin + plus the possibility to winning a prize
 
 == Demo
 
 [quote]
 Deploy a Quarkus app as a lambda funtion at AWS
 
-https://github.com/jarryDk/aws-cdk-demo[Demo how to use Java IaC for AWS ]
+https://github.com/jarryDk/aws-cdk-demo[Demo how to use Java IaC for AWS]
 
 
